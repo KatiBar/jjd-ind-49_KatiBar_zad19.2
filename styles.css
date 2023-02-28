@@ -1,0 +1,20 @@
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #080808;
+    border-radius: 2px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+#message,
+#messageAfterComparison {
+    display: none;
+    color: #ff0202;
+    font-size: 14px;
+}
+
+.checked,
+.theSame {
+    display: none;
+}

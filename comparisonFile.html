@@ -1,10 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Porównywarka haseł</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
+<div class="container">
+    <form class="passwordFromUser">
+        <label for="psw">Hasło</label>
+        <input type="text" id="psw" name="psw" required>
+    </form>
+</div>
 
+<div id="message">
+    <p id="length" class="invalid">Za krótkie hasło. Min. 8 znaków</p>
+    <p id="bigLetter" class="invalid">Min. 1 duża litera</p>
+    <p id="smallLetter" class="invalid">Min. 1 mała litera</p>
+    <p id="sign" class="invalid">Min 1. znak specjalny</p>
+</div>
+
+<div class="container2">
+    <form class="passwordToCompare">
+       <label for="psw2">Powtórz hasło</label>
+      <input type="text" id="psw2" name="psw2" required>
+    </form>
+</div>
+
+<div id="messageAfterComparison">
+    <p id="comparison" class="different">Hasła różnią się od siebie!</p>
+</div>
+<script src="passwordComparator.js"></script>
 </body>
 </html>
